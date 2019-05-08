@@ -1,8 +1,18 @@
+import sys
 def MHA():
   print '1 for Yes, 2 for No'
 
   x='Is your character'
   a=input(str(x)+' a female?')
+
+  while True:
+    try:
+      if a != 1 and a !=2:
+        raise ValueError #this will send it to the print message and back to the input option
+      break
+    except ValueError:
+      sys.exit("Invalid. The input must be 1 or 2. Start over.")
+
   if int(a)==1:
     b=input(str(x)+' a hero?')
 
@@ -12,10 +22,10 @@ def MHA():
         return 'Recovery girl'
 
       else:
-          return 'Midnight'
+        return 'Midnight'
 
     else: 
-      e==input(str(x)+' a student?')
+      e=input(str(x)+' a student?')
       if e==1:
         f=input(str(x)+' popularly shipped with another 1-A student?')
         if f==1:
@@ -116,4 +126,8 @@ def MHA():
 
         else:
           return 'Stain'
+
+
+MHA()
+
 
