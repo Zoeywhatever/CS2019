@@ -1,5 +1,6 @@
 #To use the code, you only need to run it and answer the questions appearing on the screen. 
-#For the variables in the code, they are mostly questions I design that are simply labeled by characters. x is a phrase used often. L is a list I use to count the number of questions asked. name if the user's name. MHA is for My Hero Academia, the name of the anime. 
+#For the variables in the code, they are mostly questions I design that are simply labeled by characters. x is a phrase used often. L is a list I use to count the number of questions asked. name is the user's name. MHA is for My Hero Academia, the name of the anime. 
+
 import sys
 import time
 def MHA():
